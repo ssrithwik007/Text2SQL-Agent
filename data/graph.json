@@ -1,0 +1,3030 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "nodes": [
+    {
+      "id": "accessoriallist"
+    },
+    {
+      "id": "action"
+    },
+    {
+      "id": "adjustmentreason"
+    },
+    {
+      "id": "all_status"
+    },
+    {
+      "id": "batching"
+    },
+    {
+      "id": "batchingitems"
+    },
+    {
+      "id": "billingfields"
+    },
+    {
+      "id": "calendaractivity"
+    },
+    {
+      "id": "carriers"
+    },
+    {
+      "id": "carrierservice"
+    },
+    {
+      "id": "carrierservicecodes"
+    },
+    {
+      "id": "carriertype"
+    },
+    {
+      "id": "cart_info"
+    },
+    {
+      "id": "carttotes"
+    },
+    {
+      "id": "category"
+    },
+    {
+      "id": "clientactivitynotification"
+    },
+    {
+      "id": "clientcartonsizes"
+    },
+    {
+      "id": "clientdocument"
+    },
+    {
+      "id": "clientnotes"
+    },
+    {
+      "id": "clientnotifications"
+    },
+    {
+      "id": "clientshipmethod"
+    },
+    {
+      "id": "clientstafforderlog"
+    },
+    {
+      "id": "clientstaffpolog"
+    },
+    {
+      "id": "clienttags"
+    },
+    {
+      "id": "condition"
+    },
+    {
+      "id": "conditionlink"
+    },
+    {
+      "id": "country"
+    },
+    {
+      "id": "cyclecount"
+    },
+    {
+      "id": "cyclecounthistory"
+    },
+    {
+      "id": "cyclecounttracking"
+    },
+    {
+      "id": "damagereason"
+    },
+    {
+      "id": "defaultmessages"
+    },
+    {
+      "id": "deliverytrucktype"
+    },
+    {
+      "id": "errorlog"
+    },
+    {
+      "id": "expiryreasons"
+    },
+    {
+      "id": "fileupload"
+    },
+    {
+      "id": "freightmanifests"
+    },
+    {
+      "id": "freightpallets"
+    },
+    {
+      "id": "freightshipment"
+    },
+    {
+      "id": "freightuploads"
+    },
+    {
+      "id": "gridfilters"
+    },
+    {
+      "id": "hazmat"
+    },
+    {
+      "id": "holidaylist"
+    },
+    {
+      "id": "integrationcarriermapping"
+    },
+    {
+      "id": "integrationchannel"
+    },
+    {
+      "id": "integrationdetails"
+    },
+    {
+      "id": "integrationmapping"
+    },
+    {
+      "id": "integrationproperties"
+    },
+    {
+      "id": "integrationtypes"
+    },
+    {
+      "id": "inventory_changelog"
+    },
+    {
+      "id": "job"
+    },
+    {
+      "id": "jobnotes"
+    },
+    {
+      "id": "jobticket"
+    },
+    {
+      "id": "jobticketitems"
+    },
+    {
+      "id": "jobticketlog"
+    },
+    {
+      "id": "jobtickettask"
+    },
+    {
+      "id": "kbboard"
+    },
+    {
+      "id": "kbcallreasons"
+    },
+    {
+      "id": "kbcalltype"
+    },
+    {
+      "id": "kbcards"
+    },
+    {
+      "id": "kbcolumns"
+    },
+    {
+      "id": "kblog"
+    },
+    {
+      "id": "kbnotes"
+    },
+    {
+      "id": "kbtimelog"
+    },
+    {
+      "id": "kitlog"
+    },
+    {
+      "id": "localization"
+    },
+    {
+      "id": "mailnotificationlog"
+    },
+    {
+      "id": "manifest"
+    },
+    {
+      "id": "manifestbillingdata"
+    },
+    {
+      "id": "manifestcomments"
+    },
+    {
+      "id": "manifestpackage"
+    },
+    {
+      "id": "manifestpallets"
+    },
+    {
+      "id": "manifestprintdata"
+    },
+    {
+      "id": "manifestskupackagedetails"
+    },
+    {
+      "id": "manifeststatusaudit"
+    },
+    {
+      "id": "notes"
+    },
+    {
+      "id": "operator"
+    },
+    {
+      "id": "orderactivity"
+    },
+    {
+      "id": "orderchannelfields"
+    },
+    {
+      "id": "ordererrorlog"
+    },
+    {
+      "id": "orderimport"
+    },
+    {
+      "id": "orderimportchannelfields"
+    },
+    {
+      "id": "orderimporterrorlog"
+    },
+    {
+      "id": "orderimportintegration"
+    },
+    {
+      "id": "orderitems"
+    },
+    {
+      "id": "orderitemshistory"
+    },
+    {
+      "id": "orderitemstmp"
+    },
+    {
+      "id": "orderprocessjob"
+    },
+    {
+      "id": "orders"
+    },
+    {
+      "id": "ordersearchlist"
+    },
+    {
+      "id": "ordershipaddresslog"
+    },
+    {
+      "id": "ordersjob"
+    },
+    {
+      "id": "ordersjobitems"
+    },
+    {
+      "id": "ordersku_serial"
+    },
+    {
+      "id": "ordersshipment"
+    },
+    {
+      "id": "orderstatusaudit"
+    },
+    {
+      "id": "passwordresets"
+    },
+    {
+      "id": "poissue"
+    },
+    {
+      "id": "poschedule"
+    },
+    {
+      "id": "poupload"
+    },
+    {
+      "id": "properties"
+    },
+    {
+      "id": "receivingcontainertype"
+    },
+    {
+      "id": "returnitems"
+    },
+    {
+      "id": "returns"
+    },
+    {
+      "id": "rmaorderitems"
+    },
+    {
+      "id": "rmaorders"
+    },
+    {
+      "id": "robilling"
+    },
+    {
+      "id": "rochargecodes"
+    },
+    {
+      "id": "roreceiving"
+    },
+    {
+      "id": "roreceivingdetails"
+    },
+    {
+      "id": "roreceivinghistory"
+    },
+    {
+      "id": "roskupallets"
+    },
+    {
+      "id": "rostatusaudit"
+    },
+    {
+      "id": "rotracking"
+    },
+    {
+      "id": "rule"
+    },
+    {
+      "id": "ruleaction"
+    },
+    {
+      "id": "rulecondition"
+    },
+    {
+      "id": "ruleevaluations"
+    },
+    {
+      "id": "saleschannel"
+    },
+    {
+      "id": "saleschannelmapping"
+    },
+    {
+      "id": "saleschannelshipaccounts"
+    },
+    {
+      "id": "saleschannelskus"
+    },
+    {
+      "id": "scthirdpartyaccounts"
+    },
+    {
+      "id": "sku"
+    },
+    {
+      "id": "skuautofill"
+    },
+    {
+      "id": "skubarcode"
+    },
+    {
+      "id": "skuchannelmapping"
+    },
+    {
+      "id": "skuinventorylocation"
+    },
+    {
+      "id": "skuinventorylocationlog"
+    },
+    {
+      "id": "skukitmapping"
+    },
+    {
+      "id": "skulotcode"
+    },
+    {
+      "id": "skupackage"
+    },
+    {
+      "id": "skushippingbox"
+    },
+    {
+      "id": "state"
+    },
+    {
+      "id": "subcategory"
+    },
+    {
+      "id": "v_ordersource"
+    },
+    {
+      "id": "vendor"
+    },
+    {
+      "id": "warehouse"
+    },
+    {
+      "id": "whclient"
+    },
+    {
+      "id": "whlocations"
+    },
+    {
+      "id": "whmodules"
+    },
+    {
+      "id": "whuserclients"
+    },
+    {
+      "id": "whusermodules"
+    },
+    {
+      "id": "whuserrefreshtokens"
+    },
+    {
+      "id": "whusers"
+    },
+    {
+      "id": "whuserwarehouses"
+    }
+  ],
+  "edges": [
+    {
+      "source": "batching",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "batching.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "batching",
+      "target": "carrierservice",
+      "join": [
+        {
+          "left_column": "batching.shipviaid",
+          "right_column": "carrierservice.shipviaid"
+        }
+      ]
+    },
+    {
+      "source": "batchingitems",
+      "target": "batching",
+      "join": [
+        {
+          "left_column": "batchingitems.batchid",
+          "right_column": "batching.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "batchingitems",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "batchingitems.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "billingfields",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "billingfields.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "carriers",
+      "target": "integrationtypes",
+      "join": [
+        {
+          "left_column": "carriers.intgrationtypeid",
+          "right_column": "integrationtypes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "carrierservice",
+      "target": "carriers",
+      "join": [
+        {
+          "left_column": "carrierservice.carrierid",
+          "right_column": "carriers.carrierid"
+        }
+      ]
+    },
+    {
+      "source": "carrierservice",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "carrierservice.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "carrierservicecodes",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "carrierservicecodes.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "carriertype",
+      "target": "carriers",
+      "join": [
+        {
+          "left_column": "carriertype.carrierid",
+          "right_column": "carriers.carrierid"
+        }
+      ]
+    },
+    {
+      "source": "carriertype",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "carriertype.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "carttotes",
+      "target": "cart_info",
+      "join": [
+        {
+          "left_column": "carttotes.cartid",
+          "right_column": "cart_info.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "category",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "category.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "category",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "category.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientactivitynotification",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "clientactivitynotification.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientactivitynotification",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "clientactivitynotification.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientcartonsizes",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "clientcartonsizes.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientcartonsizes",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "clientcartonsizes.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientdocument",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "clientdocument.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientdocument",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "clientdocument.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "clientdocument.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientnotes",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "clientnotes.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientnotes",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "clientnotes.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientnotifications",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "clientnotifications.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientnotifications",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "clientnotifications.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientshipmethod",
+      "target": "carriers",
+      "join": [
+        {
+          "left_column": "clientshipmethod.carrierid",
+          "right_column": "carriers.carrierid"
+        }
+      ]
+    },
+    {
+      "source": "clientshipmethod",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "clientshipmethod.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientshipmethod",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "clientshipmethod.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "clientshipmethod.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clientshipmethod",
+      "target": "integrationchannel",
+      "join": [
+        {
+          "left_column": "clientshipmethod.integrationchannelid",
+          "right_column": "integrationchannel.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "clienttags",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "clienttags.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "cyclecount",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "cyclecount.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "cyclecount",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "cyclecount.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "cyclecount.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "cyclecounthistory",
+      "target": "cyclecount",
+      "join": [
+        {
+          "left_column": "cyclecounthistory.cyclecountid",
+          "right_column": "cyclecount.cyclecountid"
+        }
+      ]
+    },
+    {
+      "source": "cyclecounthistory",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "cyclecounthistory.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "cyclecounthistory",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "cyclecounthistory.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "cyclecounttracking",
+      "target": "cyclecount",
+      "join": [
+        {
+          "left_column": "cyclecounttracking.cyclecountid",
+          "right_column": "cyclecount.cyclecountid"
+        }
+      ]
+    },
+    {
+      "source": "cyclecounttracking",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "cyclecounttracking.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "cyclecounttracking.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "fileupload",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "fileupload.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "fileupload",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "fileupload.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "fileupload",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "fileupload.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "fileupload",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "fileupload.userid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "fileupload",
+      "target": "jobticket",
+      "join": [
+        {
+          "left_column": "fileupload.jobid",
+          "right_column": "jobticket.jobid"
+        }
+      ]
+    },
+    {
+      "source": "freightmanifests",
+      "target": "freightshipment",
+      "join": [
+        {
+          "left_column": "freightmanifests.fkfreightshipmentId",
+          "right_column": "freightshipment.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "freightmanifests",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "freightmanifests.fkmanifestId",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "freightpallets",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "freightpallets.createdby",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "freightpallets.modifiedby",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "freightpallets",
+      "target": "freightshipment",
+      "join": [
+        {
+          "left_column": "freightpallets.fkfreightpalletId",
+          "right_column": "freightshipment.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "freightshipment",
+      "target": "carriers",
+      "join": [
+        {
+          "left_column": "freightshipment.carrierid",
+          "right_column": "carriers.carrierid"
+        }
+      ]
+    },
+    {
+      "source": "freightshipment",
+      "target": "carrierservice",
+      "join": [
+        {
+          "left_column": "freightshipment.carrierserviceid",
+          "right_column": "carrierservice.shipviaid"
+        }
+      ]
+    },
+    {
+      "source": "freightshipment",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "freightshipment.createdby",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "freightshipment.modifiedby",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "freightuploads",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "freightuploads.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "freightuploads",
+      "target": "freightshipment",
+      "join": [
+        {
+          "left_column": "freightuploads.freightshipmentid",
+          "right_column": "freightshipment.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "gridfilters",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "gridfilters.userid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "integrationcarriermapping",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "integrationcarriermapping.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "integrationcarriermapping",
+      "target": "integrationtypes",
+      "join": [
+        {
+          "left_column": "integrationcarriermapping.integrationid",
+          "right_column": "integrationtypes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "integrationcarriermapping",
+      "target": "carrierservice",
+      "join": [
+        {
+          "left_column": "integrationcarriermapping.shipviaid",
+          "right_column": "carrierservice.shipviaid"
+        }
+      ]
+    },
+    {
+      "source": "integrationchannel",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "integrationchannel.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "integrationchannel",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "integrationchannel.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "integrationchannel.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "integrationchannel",
+      "target": "integrationtypes",
+      "join": [
+        {
+          "left_column": "integrationchannel.integrationtypeid",
+          "right_column": "integrationtypes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "integrationdetails",
+      "target": "integrationchannel",
+      "join": [
+        {
+          "left_column": "integrationdetails.channelid",
+          "right_column": "integrationchannel.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "integrationdetails",
+      "target": "integrationproperties",
+      "join": [
+        {
+          "left_column": "integrationdetails.integrationpropertyid",
+          "right_column": "integrationproperties.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "integrationmapping",
+      "target": "integrationchannel",
+      "join": [
+        {
+          "left_column": "integrationmapping.channelid",
+          "right_column": "integrationchannel.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "integrationproperties",
+      "target": "integrationtypes",
+      "join": [
+        {
+          "left_column": "integrationproperties.integrationtypeid",
+          "right_column": "integrationtypes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "job",
+      "target": "cart_info",
+      "join": [
+        {
+          "left_column": "job.cartid",
+          "right_column": "cart_info.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "jobnotes",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "jobnotes.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "jobnotes",
+      "target": "jobticket",
+      "join": [
+        {
+          "left_column": "jobnotes.jobid",
+          "right_column": "jobticket.jobid"
+        }
+      ]
+    },
+    {
+      "source": "jobticket",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "jobticket.assignedto",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "jobticket.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "jobticket.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "jobticket",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "jobticket.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "jobticket",
+      "target": "whlocations",
+      "join": [
+        {
+          "left_column": "jobticket.whid",
+          "right_column": "whlocations.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "jobticketitems",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "jobticketitems.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "jobticketitems.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "jobticketitems",
+      "target": "jobticket",
+      "join": [
+        {
+          "left_column": "jobticketitems.jobid",
+          "right_column": "jobticket.jobid"
+        }
+      ]
+    },
+    {
+      "source": "jobticketlog",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "jobticketlog.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "jobticketlog",
+      "target": "jobticket",
+      "join": [
+        {
+          "left_column": "jobticketlog.jobid",
+          "right_column": "jobticket.jobid"
+        }
+      ]
+    },
+    {
+      "source": "jobtickettask",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "jobtickettask.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "jobtickettask.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "jobtickettask",
+      "target": "jobticket",
+      "join": [
+        {
+          "left_column": "jobtickettask.jobid",
+          "right_column": "jobticket.jobid"
+        }
+      ]
+    },
+    {
+      "source": "kbboard",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "kbboard.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "kbcalltype",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "kbcalltype.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "kbcards",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "kbcards.assignedto",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "kbcards",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "kbcards.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "kbcards",
+      "target": "kbcalltype",
+      "join": [
+        {
+          "left_column": "kbcards.type",
+          "right_column": "kbcalltype.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "kbcards",
+      "target": "warehouse",
+      "join": [
+        {
+          "left_column": "kbcards.whid",
+          "right_column": "warehouse.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "kbcolumns",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "kbcolumns.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "kblog",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "kblog.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "kbnotes",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "kbnotes.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "manifest",
+      "target": "carriers",
+      "join": [
+        {
+          "left_column": "manifest.carrierid",
+          "right_column": "carriers.carrierid"
+        }
+      ]
+    },
+    {
+      "source": "manifest",
+      "target": "carrierservice",
+      "join": [
+        {
+          "left_column": "manifest.carrierserviceid",
+          "right_column": "carrierservice.shipviaid"
+        }
+      ]
+    },
+    {
+      "source": "manifest",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "manifest.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "manifest",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "manifest.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "manifestbillingdata",
+      "target": "billingfields",
+      "join": [
+        {
+          "left_column": "manifestbillingdata.billingfieldid",
+          "right_column": "billingfields.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "manifestbillingdata",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "manifestbillingdata.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "manifestbillingdata",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "manifestbillingdata.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "manifestbillingdata",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "manifestbillingdata.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "manifestcomments",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "manifestcomments.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "manifestcomments",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "manifestcomments.createduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "manifestpackage",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "manifestpackage.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "manifestpackage",
+      "target": "carrierservice",
+      "join": [
+        {
+          "left_column": "manifestpackage.shipviaid",
+          "right_column": "carrierservice.shipviaid"
+        }
+      ]
+    },
+    {
+      "source": "manifestpallets",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "manifestpallets.createdby",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "manifestpallets.modifiedby",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "manifestpallets",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "manifestpallets.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "manifestskupackagedetails",
+      "target": "manifestpackage",
+      "join": [
+        {
+          "left_column": "manifestskupackagedetails.packageid",
+          "right_column": "manifestpackage.packageid"
+        }
+      ]
+    },
+    {
+      "source": "notes",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "notes.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "notes",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "notes.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "notes",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "notes.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "notes",
+      "target": "roreceiving",
+      "join": [
+        {
+          "left_column": "notes.roid",
+          "right_column": "roreceiving.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "notes",
+      "target": "vendor",
+      "join": [
+        {
+          "left_column": "notes.vendorid",
+          "right_column": "vendor.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderactivity",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "orderactivity.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "orderchannelfields",
+      "target": "integrationchannel",
+      "join": [
+        {
+          "left_column": "orderchannelfields.fkintegrationchannelid",
+          "right_column": "integrationchannel.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderchannelfields",
+      "target": "integrationtypes",
+      "join": [
+        {
+          "left_column": "orderchannelfields.fkchannelid",
+          "right_column": "integrationtypes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderchannelfields",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "orderchannelfields.fkorderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "ordererrorlog",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "ordererrorlog.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "ordererrorlog",
+      "target": "integrationtypes",
+      "join": [
+        {
+          "left_column": "ordererrorlog.ordersource",
+          "right_column": "integrationtypes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderimportchannelfields",
+      "target": "integrationchannel",
+      "join": [
+        {
+          "left_column": "orderimportchannelfields.fkintegrationchannelid",
+          "right_column": "integrationchannel.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderimportchannelfields",
+      "target": "integrationtypes",
+      "join": [
+        {
+          "left_column": "orderimportchannelfields.fkchannelid",
+          "right_column": "integrationtypes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderimportchannelfields",
+      "target": "orderimportintegration",
+      "join": [
+        {
+          "left_column": "orderimportchannelfields.fkorderomportid",
+          "right_column": "orderimportintegration.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderimportintegration",
+      "target": "integrationchannel",
+      "join": [
+        {
+          "left_column": "orderimportintegration.integrationchannelid",
+          "right_column": "integrationchannel.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderimportintegration",
+      "target": "integrationtypes",
+      "join": [
+        {
+          "left_column": "orderimportintegration.fkchannelid",
+          "right_column": "integrationtypes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderitems",
+      "target": "whlocations",
+      "join": [
+        {
+          "left_column": "orderitems.locationid",
+          "right_column": "whlocations.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderitems",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "orderitems.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "orderitems",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "orderitems.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "orderitems",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "orderitems.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemshistory",
+      "target": "whlocations",
+      "join": [
+        {
+          "left_column": "orderitemshistory.locationid",
+          "right_column": "whlocations.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemshistory",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "orderitemshistory.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemshistory",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "orderitemshistory.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemshistory",
+      "target": "orderitems",
+      "join": [
+        {
+          "left_column": "orderitemshistory.orderitemsid",
+          "right_column": "orderitems.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemshistory",
+      "target": "manifestpackage",
+      "join": [
+        {
+          "left_column": "orderitemshistory.packageid",
+          "right_column": "manifestpackage.packageid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemshistory",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "orderitemshistory.pickeduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "orderitemshistory.qcuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemshistory",
+      "target": "skuinventorylocation",
+      "join": [
+        {
+          "left_column": "orderitemshistory.siluniqueid",
+          "right_column": "skuinventorylocation.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemshistory",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "orderitemshistory.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemstmp",
+      "target": "orderimportintegration",
+      "join": [
+        {
+          "left_column": "orderitemstmp.orderimportintegrationid",
+          "right_column": "orderimportintegration.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderitemstmp",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "orderitemstmp.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "orderprocessjob",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "orderprocessjob.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orderprocessjob",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "orderprocessjob.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orders",
+      "target": "batching",
+      "join": [
+        {
+          "left_column": "orders.batchid",
+          "right_column": "batching.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orders",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "orders.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orders",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "orders.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "orders.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "orders",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "orders.masterskuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "orders",
+      "target": "warehouse",
+      "join": [
+        {
+          "left_column": "orders.whid",
+          "right_column": "warehouse.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "ordershipaddresslog",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "ordershipaddresslog.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "ordershipaddresslog",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "ordershipaddresslog.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "ordershipaddresslog",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "ordershipaddresslog.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "ordersjob",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "ordersjob.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "ordersjob.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "ordersjobitems",
+      "target": "cart_info",
+      "join": [
+        {
+          "left_column": "ordersjobitems.cartid",
+          "right_column": "cart_info.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "ordersjobitems",
+      "target": "ordersjob",
+      "join": [
+        {
+          "left_column": "ordersjobitems.jobid",
+          "right_column": "ordersjob.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "ordersjobitems",
+      "target": "manifest",
+      "join": [
+        {
+          "left_column": "ordersjobitems.manifestid",
+          "right_column": "manifest.manifestid"
+        }
+      ]
+    },
+    {
+      "source": "ordersjobitems",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "ordersjobitems.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "ordersjobitems",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "ordersjobitems.userid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "ordersku_serial",
+      "target": "roreceivingdetails",
+      "join": [
+        {
+          "left_column": "ordersku_serial.rodetailedid",
+          "right_column": "roreceivingdetails.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "ordersshipment",
+      "target": "carrierservice",
+      "join": [
+        {
+          "left_column": "ordersshipment.reqshipviaid",
+          "right_column": "carrierservice.shipviaid"
+        }
+      ]
+    },
+    {
+      "source": "ordersshipment",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "ordersshipment.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "passwordresets",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "passwordresets.fk_whuser",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "properties",
+      "target": "integrationtypes",
+      "join": [
+        {
+          "left_column": "properties.integrationtypeid",
+          "right_column": "integrationtypes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "returns",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "returns.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorderitems",
+      "target": "orderitemshistory",
+      "join": [
+        {
+          "left_column": "rmaorderitems.oihuid",
+          "right_column": "orderitemshistory.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorderitems",
+      "target": "rmaorders",
+      "join": [
+        {
+          "left_column": "rmaorderitems.rmaorderid",
+          "right_column": "rmaorders.rmaorderid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorderitems",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "rmaorderitems.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorderitemstemp",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "rmaorderitemstemp.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorderitemstemp",
+      "target": "orderitemshistory",
+      "join": [
+        {
+          "left_column": "rmaorderitemstemp.oihuid",
+          "right_column": "orderitemshistory.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorderitemstemp",
+      "target": "rmaorders",
+      "join": [
+        {
+          "left_column": "rmaorderitemstemp.rmaorderid",
+          "right_column": "rmaorders.rmaorderid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorderitemstemp",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "rmaorderitemstemp.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorderitemstemp",
+      "target": "whlocations",
+      "join": [
+        {
+          "left_column": "rmaorderitemstemp.whid",
+          "right_column": "whlocations.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorders",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "rmaorders.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorders",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "rmaorders.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "rmaorders",
+      "target": "returns",
+      "join": [
+        {
+          "left_column": "rmaorders.fkreturnid",
+          "right_column": "returns.returnid"
+        }
+      ]
+    },
+    {
+      "source": "robilling",
+      "target": "rochargecodes",
+      "join": [
+        {
+          "left_column": "robilling.ccuniqueid",
+          "right_column": "rochargecodes.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "robilling",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "robilling.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "robilling.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "robilling",
+      "target": "roreceiving",
+      "join": [
+        {
+          "left_column": "robilling.pouniqueid",
+          "right_column": "roreceiving.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roreceiving",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "roreceiving.arrivaluserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "roreceiving.completeduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "roreceiving.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "roreceiving.finalizeduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "roreceiving.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "roreceiving.putawayuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "roreceiving.scheduleduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "roreceiving.unloadenduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "roreceiving.unloadstartuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roreceiving",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "roreceiving.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roreceivingdetails",
+      "target": "roreceiving",
+      "join": [
+        {
+          "left_column": "roreceivingdetails.pouid",
+          "right_column": "roreceiving.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roreceivingdetails",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "roreceivingdetails.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "roreceivinghistory",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "roreceivinghistory.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "roreceivinghistory.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roreceivinghistory",
+      "target": "whlocations",
+      "join": [
+        {
+          "left_column": "roreceivinghistory.locationid",
+          "right_column": "whlocations.uniqueid"
+        },
+        {
+          "left_column": "roreceivinghistory.palletid",
+          "right_column": "whlocations.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roreceivinghistory",
+      "target": "roreceivingdetails",
+      "join": [
+        {
+          "left_column": "roreceivinghistory.rodetailsid",
+          "right_column": "roreceivingdetails.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roskupallets",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "roskupallets.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roskupallets",
+      "target": "whlocations",
+      "join": [
+        {
+          "left_column": "roskupallets.palletid",
+          "right_column": "whlocations.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roskupallets",
+      "target": "roreceiving",
+      "join": [
+        {
+          "left_column": "roskupallets.roid",
+          "right_column": "roreceiving.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "roskupallets",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "roskupallets.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "rostatusaudit",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "rostatusaudit.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rostatusaudit",
+      "target": "roreceiving",
+      "join": [
+        {
+          "left_column": "rostatusaudit.roid",
+          "right_column": "roreceiving.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rotracking",
+      "target": "roreceiving",
+      "join": [
+        {
+          "left_column": "rotracking.pouniqueid",
+          "right_column": "roreceiving.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rule",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "rule.createduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "rule.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "rule",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "rule.whclientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "ruleaction",
+      "target": "action",
+      "join": [
+        {
+          "left_column": "ruleaction.actionid",
+          "right_column": "action.id"
+        }
+      ]
+    },
+    {
+      "source": "ruleaction",
+      "target": "rule",
+      "join": [
+        {
+          "left_column": "ruleaction.ruleid",
+          "right_column": "rule.id"
+        }
+      ]
+    },
+    {
+      "source": "rulecondition",
+      "target": "condition",
+      "join": [
+        {
+          "left_column": "rulecondition.conditionid",
+          "right_column": "condition.id"
+        }
+      ]
+    },
+    {
+      "source": "rulecondition",
+      "target": "conditionlink",
+      "join": [
+        {
+          "left_column": "rulecondition.conditionlinkid",
+          "right_column": "conditionlink.id"
+        }
+      ]
+    },
+    {
+      "source": "rulecondition",
+      "target": "operator",
+      "join": [
+        {
+          "left_column": "rulecondition.operatorid",
+          "right_column": "operator.id"
+        }
+      ]
+    },
+    {
+      "source": "rulecondition",
+      "target": "rule",
+      "join": [
+        {
+          "left_column": "rulecondition.ruleid",
+          "right_column": "rule.id"
+        }
+      ]
+    },
+    {
+      "source": "ruleevaluations",
+      "target": "orders",
+      "join": [
+        {
+          "left_column": "ruleevaluations.orderid",
+          "right_column": "orders.orderid"
+        }
+      ]
+    },
+    {
+      "source": "ruleevaluations",
+      "target": "rule",
+      "join": [
+        {
+          "left_column": "ruleevaluations.ruleid",
+          "right_column": "rule.id"
+        }
+      ]
+    },
+    {
+      "source": "ruleevaluations",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "ruleevaluations.whuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "saleschannelmapping",
+      "target": "carriers",
+      "join": [
+        {
+          "left_column": "saleschannelmapping.carrierid",
+          "right_column": "carriers.carrierid"
+        }
+      ]
+    },
+    {
+      "source": "saleschannelmapping",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "saleschannelmapping.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "saleschannelmapping",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "saleschannelmapping.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "saleschannelmapping",
+      "target": "saleschannel",
+      "join": [
+        {
+          "left_column": "saleschannelmapping.saleschannelid",
+          "right_column": "saleschannel.saleschannelid"
+        }
+      ]
+    },
+    {
+      "source": "saleschannelskus",
+      "target": "saleschannel",
+      "join": [
+        {
+          "left_column": "saleschannelskus.saleschannelid",
+          "right_column": "saleschannel.saleschannelid"
+        }
+      ]
+    },
+    {
+      "source": "saleschannelskus",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "saleschannelskus.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "sku",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "sku.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "sku",
+      "target": "country",
+      "join": [
+        {
+          "left_column": "sku.originid",
+          "right_column": "country.id"
+        }
+      ]
+    },
+    {
+      "source": "sku",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "sku.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "sku.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "sku",
+      "target": "hazmat",
+      "join": [
+        {
+          "left_column": "sku.hazmatid",
+          "right_column": "hazmat.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuautofill",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "skuautofill.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "skuautofill.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuautofill",
+      "target": "saleschannel",
+      "join": [
+        {
+          "left_column": "skuautofill.saleschannelid",
+          "right_column": "saleschannel.saleschannelid"
+        }
+      ]
+    },
+    {
+      "source": "skuautofill",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "skuautofill.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "skubarcode",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "skubarcode.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "skubarcode.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skubarcode",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "skubarcode.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "skuchannelmapping",
+      "target": "saleschannel",
+      "join": [
+        {
+          "left_column": "skuchannelmapping.channelid",
+          "right_column": "saleschannel.saleschannelid"
+        }
+      ]
+    },
+    {
+      "source": "skuchannelmapping",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "skuchannelmapping.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuchannelmapping",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "skuchannelmapping.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "skuchannelmapping.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuchannelmapping",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "skuchannelmapping.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "skuinventorylocation",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "skuinventorylocation.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "skuinventorylocation.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuinventorylocation",
+      "target": "whlocations",
+      "join": [
+        {
+          "left_column": "skuinventorylocation.locationid",
+          "right_column": "whlocations.uniqueid"
+        },
+        {
+          "left_column": "skuinventorylocation.palletid",
+          "right_column": "whlocations.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuinventorylocation",
+      "target": "all_status",
+      "join": [
+        {
+          "left_column": "skuinventorylocation.holdreasonid",
+          "right_column": "all_status.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuinventorylocation",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "skuinventorylocation.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "skuinventorylocation",
+      "target": "warehouse",
+      "join": [
+        {
+          "left_column": "skuinventorylocation.whid",
+          "right_column": "warehouse.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuinventorylocationlog",
+      "target": "whlocations",
+      "join": [
+        {
+          "left_column": "skuinventorylocationlog.locationid",
+          "right_column": "whlocations.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuinventorylocationlog",
+      "target": "all_status",
+      "join": [
+        {
+          "left_column": "skuinventorylocationlog.reasonid",
+          "right_column": "all_status.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuinventorylocationlog",
+      "target": "skuinventorylocation",
+      "join": [
+        {
+          "left_column": "skuinventorylocationlog.siluniqueid",
+          "right_column": "skuinventorylocation.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skuinventorylocationlog",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "skuinventorylocationlog.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "skukitmapping",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "skukitmapping.componentskuid",
+          "right_column": "sku.skuid"
+        },
+        {
+          "left_column": "skukitmapping.kitskuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "skukitmapping",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "skukitmapping.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "skukitmapping.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skupackage",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "skupackage.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "skupackage.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skupackage",
+      "target": "skushippingbox",
+      "join": [
+        {
+          "left_column": "skupackage.shippingboxid",
+          "right_column": "skushippingbox.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "skupackage",
+      "target": "sku",
+      "join": [
+        {
+          "left_column": "skupackage.skuid",
+          "right_column": "sku.skuid"
+        }
+      ]
+    },
+    {
+      "source": "subcategory",
+      "target": "category",
+      "join": [
+        {
+          "left_column": "subcategory.categoryid",
+          "right_column": "category.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "subcategory",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "subcategory.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "subcategory",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "subcategory.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "vendor",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "vendor.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "vendor",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "vendor.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "vendor.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "warehouse",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "warehouse.entryuserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whclient",
+      "target": "whlocations",
+      "join": [
+        {
+          "left_column": "whclient.defaultlocationid",
+          "right_column": "whlocations.uniqueid"
+        },
+        {
+          "left_column": "whclient.defaultpalletid",
+          "right_column": "whlocations.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whclient",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "whclient.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "whclient.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whclient",
+      "target": "warehouse",
+      "join": [
+        {
+          "left_column": "whclient.whid",
+          "right_column": "warehouse.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whlocations",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "whlocations.entryuserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "whlocations.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whlocations",
+      "target": "warehouse",
+      "join": [
+        {
+          "left_column": "whlocations.whid",
+          "right_column": "warehouse.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whmodules",
+      "target": "whmodules",
+      "join": [
+        {
+          "left_column": "whmodules.parentid",
+          "right_column": "whmodules.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whuserclients",
+      "target": "whclient",
+      "join": [
+        {
+          "left_column": "whuserclients.clientid",
+          "right_column": "whclient.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whuserclients",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "whuserclients.createduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "whuserclients.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "whuserclients.userid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whusermodules",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "whusermodules.createduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "whusermodules.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "whusermodules.userid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whusermodules",
+      "target": "whmodules",
+      "join": [
+        {
+          "left_column": "whusermodules.moduleid",
+          "right_column": "whmodules.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whuserrefreshtokens",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "whuserrefreshtokens.userid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whuserwarehouses",
+      "target": "whusers",
+      "join": [
+        {
+          "left_column": "whuserwarehouses.createduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "whuserwarehouses.modifieduserid",
+          "right_column": "whusers.uniqueid"
+        },
+        {
+          "left_column": "whuserwarehouses.userid",
+          "right_column": "whusers.uniqueid"
+        }
+      ]
+    },
+    {
+      "source": "whuserwarehouses",
+      "target": "warehouse",
+      "join": [
+        {
+          "left_column": "whuserwarehouses.whid",
+          "right_column": "warehouse.uniqueid"
+        }
+      ]
+    }
+  ]
+}
