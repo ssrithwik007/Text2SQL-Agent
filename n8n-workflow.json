@@ -1,0 +1,662 @@
+{
+  "name": "text2sqlAgent-workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "b0ea46cc-ff35-44de-868e-50860d58172b",
+              "leftValue": "={{ Object.keys($json).includes(\"QUERY PLAN\") }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        1200,
+        624
+      ],
+      "id": "fdbb5ced-1dc9-4530-bebc-1d8302f8420e",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{\n  json: {\n  \"error\": \"Unable to generate a valid SQL query. Please rephrase your question.\",\n  \"message\": $input.first().json.message\n  }}]"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1872,
+        720
+      ],
+      "id": "fc4516af-43e1-4869-9e31-c75b87a4ff40",
+      "name": "Error"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT \n    user_question,\n    generated_sql,\n    (question_embedding <=> $1::vector) AS distance\nFROM public.query_cache\nORDER BY distance ASC\nLIMIT 1;",
+        "options": {
+          "queryReplacement": "={{ '[' + $json.embeddings.join(',') + ']' }}"
+        }
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        -624,
+        496
+      ],
+      "id": "cc8f5d0e-2020-4d7b-b279-9670a44f8c7b",
+      "name": "Get cache",
+      "alwaysOutputData": true,
+      "credentials": {
+        "postgres": {
+          "id": "uKvHoAzEM3vumjA5",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "64fa4c45-6b6c-423a-bdfc-b7098b152d91",
+              "leftValue": "={{ $json.text || $json.same_intent }}",
+              "rightValue": 0.15,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -48,
+        496
+      ],
+      "id": "55834b54-f9a9-43df-a9cf-fbb36179464f",
+      "name": "check cache"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO public.query_cache (\n    user_question,\n    generated_sql,\n    question_embedding\n)\nVALUES (\n    '{{$('Webhook').item.json.query.query.replace(/'/g, \"''\")}}',\n    '{{$(\"SQL\").first().json.text.replace(/^```sql\\s*|\\s*```$/gi, '').replace(/'/g, \"''\")}}',\n    '{{JSON.stringify($('Get query embeddings').first().json.embeddings)}}'::vector\n);",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        1648,
+        528
+      ],
+      "id": "5ef39a3d-2751-4d61-996e-c151b351a0f2",
+      "name": "Add to cache",
+      "executeOnce": true,
+      "credentials": {
+        "postgres": {
+          "id": "uKvHoAzEM3vumjA5",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Determine whether the following two user queries have the same intent.\n\nQuery 1:\n{{ $('Webhook').item.json.query.query }}\n\nQuery 2:\n{{ $json.user_question ? $json.user_question : \"could not retrieve any similar text\" }}\n\nRespond with exactly one word:\ntrue or false\n\nDo not output any other text, punctuation, or explanation.",
+        "hasOutputParser": true,
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        -400,
+        496
+      ],
+      "id": "43bef39a-4aca-4f9f-8659-1947fc8c4234",
+      "name": "Basic LLM Chain1"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON)\n{{ $('SQL').item.json.text.replace(/^```sql\\s*|\\s*```$/gi, '') }}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        976,
+        624
+      ],
+      "id": "d5040b26-d1a1-417c-b325-90b7b3f00851",
+      "name": "Check query ",
+      "credentials": {
+        "postgres": {
+          "id": "dNEIkHj1ORAk5IuB",
+          "name": "Postgres account 2"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "llama-3.1-8b-instant",
+          "mode": "list",
+          "cachedResultName": "llama-3.1-8b-instant"
+        },
+        "responsesApiEnabled": false,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        480,
+        848
+      ],
+      "id": "e264ed69-ca0e-410e-b546-b6595018f44e",
+      "name": "Groq Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "zbhu34hCOfHtIwY8",
+          "name": "Groq Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "llama-3.1-8b-instant",
+          "mode": "list",
+          "cachedResultName": "llama-3.1-8b-instant"
+        },
+        "responsesApiEnabled": false,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        -320,
+        720
+      ],
+      "id": "a96286fb-523e-42ed-8554-45ee1961894b",
+      "name": "Groq Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "zbhu34hCOfHtIwY8",
+          "name": "Groq Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "path": "execute",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*",
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -1072,
+        496
+      ],
+      "id": "b85f4e5d-bf79-4b0d-ba12-ac2ef81b6f00",
+      "name": "Webhook",
+      "webhookId": "b2c1ae10-1db8-44b0-a0ef-a87686f1ba19"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        2096,
+        528
+      ],
+      "id": "f2bc932b-ffa1-42c3-bcc0-c96ee33afe92",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/embed",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "text",
+              "value": "={{  $json.query.query }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -848,
+        496
+      ],
+      "id": "88548a81-22f8-4305-9fe7-5ac7eebd647d",
+      "name": "Get query embeddings"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "{{ $('Get cache').item.json.generated_sql.replace(/^```sql\\s*|\\s*```$/gi, '') }}",
+        "options": {
+          "replaceEmptyStrings": true
+        }
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        1648,
+        304
+      ],
+      "id": "21cb9fd2-c9a9-4da7-9606-3523940823e9",
+      "name": "Execute cached SQL",
+      "credentials": {
+        "postgres": {
+          "id": "dNEIkHj1ORAk5IuB",
+          "name": "Postgres account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/retrieve",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"query\": \"{{ $('Webhook').item.json.query.query }}\",\n  \"top_tables\": 5,\n  \"top_columns\": 15\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        176,
+        624
+      ],
+      "id": "4b2bc996-6684-412a-8235-1baa7ab4e447",
+      "name": "Get Tables and Columns"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Retrieval response\nconst retrieval = $('Get Tables and Columns').first().json;\n\nconst selectedTables = retrieval.selected_tables || [];\nconst selectedColumns = retrieval.selected_columns || [];\nconst joins = retrieval.joins || [];\n\nconst schemaMap = {};\nfor (const key of selectedTables) {\n  schemaMap[key] = {\"columns\": []};\n}\nfor(const col of selectedColumns) {\n  schemaMap[col[\"table\"]][\"columns\"].push(col[\"column\"]);\n}\n\nreturn [{\n    json: {\n        question: $('Webhook').first().json.query,\n        schemaMap: schemaMap,\n        selected_tables: selectedTables,\n        selected_columns: selectedColumns,\n        joins: joins,\n        index: 0\n    }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        752,
+        624
+      ],
+      "id": "753df054-bb04-4d35-85bc-7099d4cf75ff",
+      "name": "Context Build"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "{{ $('SQL').item.json.text.replace(/^```sql\\s*|\\s*```$/gi, '') }}",
+        "options": {
+          "replaceEmptyStrings": true
+        }
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        1424,
+        528
+      ],
+      "id": "f316d75e-ff3c-436c-a1a5-da5c7fda9180",
+      "name": "Execute SQL",
+      "alwaysOutputData": true,
+      "credentials": {
+        "postgres": {
+          "id": "dNEIkHj1ORAk5IuB",
+          "name": "Postgres account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $('Execute cached SQL').all();\n\n// Filter out empty items\nconst validItems = items.filter(item => item && item.json);\n\n// Return a default object if no data\nif (validItems.length === 0) {\n  return [{\n    json: {\n      data: []\n    }\n  }];\n}\n\n// Return the JSON array\nreturn [{\n  json: {\n    data: validItems.map(item => item.json)\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1872,
+        304
+      ],
+      "id": "dc159bf0-3395-4323-bd92-7d6db91fcc55",
+      "name": "Format Output"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $('Execute SQL').all();\n\n// Filter out empty items\nconst validItems = items.filter(item => item && item.json);\n\n// Return a default object if no data\nif (validItems.length === 0) {\n  return [{\n    json: {\n      data: []\n    }\n  }];\n}\n\n// Return the JSON array\nreturn [{\n  json: {\n    data: validItems.map(item => item.json)\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1872,
+        528
+      ],
+      "id": "dc57572d-4e05-49dd-8f17-80a566d021a2",
+      "name": "Format Output1"
+    },
+    {
+      "parameters": {
+        "content": "### Paste the api /embed endpoint here",
+        "height": 80
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -912,
+        656
+      ],
+      "id": "1c28f8ba-a52c-4c7e-8c81-433177291345",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "### Paste the api /retrieve endpoint here",
+        "height": 80
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        112,
+        784
+      ],
+      "id": "26c0d6b0-09e9-44d7-bf04-8e76b063183c",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are a PostgreSQL SQL generator.\n\nInputs:\nQuestion: {{ $('Webhook').item.json.query.query }}\nSchema: {{ $json.selected_columns ? JSON.stringify($json.selected_columns) : '[]' }}\nRelationships: {{ $json.joins ? JSON.stringify($json.joins) : '[]' }}\n\nGenerate a single PostgreSQL SELECT query.\n\nRules:\n- Use ONLY tables, columns, and relationships provided in the inputs. Every table, column, and join used in the query must appear verbatim in the provided Schema or Relationships.\n- Justify every column you used in the query, quote where you found it\n- Never invent, infer, rename, or assume tables, columns, values, or joins.\n- Use only the minimum required columns and clauses. You need not use all the provided tables and ccolumns, only use the ones which are necessarry\n- Follow the provided relationships exactly.\n- No INSERT, UPDATE, DELETE, DDL, or other write operations.\n- Write sql only, no formatting\n\n\nOutput SQL only, no other characters, no reasoning\n",
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        400,
+        624
+      ],
+      "id": "1121dfcd-a5b5-481e-a0ea-c8f68966348b",
+      "name": "SQL"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Execute SQL",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get cache": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "check cache": {
+      "main": [
+        [
+          {
+            "node": "Execute cached SQL",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get Tables and Columns",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain1": {
+      "main": [
+        [
+          {
+            "node": "check cache",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check query ": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add to cache": {
+      "main": [
+        [
+          {
+            "node": "Format Output1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "SQL",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Get query embeddings",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get query embeddings": {
+      "main": [
+        [
+          {
+            "node": "Get cache",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute cached SQL": {
+      "main": [
+        [
+          {
+            "node": "Format Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Tables and Columns": {
+      "main": [
+        [
+          {
+            "node": "SQL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Context Build": {
+      "main": [
+        [
+          {
+            "node": "Check query ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute SQL": {
+      "main": [
+        [
+          {
+            "node": "Add to cache",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Output": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Output1": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SQL": {
+      "main": [
+        [
+          {
+            "node": "Context Build",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "a8f58ae8-58cf-441a-8e03-321bd0504e1c",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "fc30665682148225a0be9cdd130787b8c350efda9f8e68591c03deeea3811b0d"
+  },
+  "nodeGroups": [],
+  "id": "1yscqYY0TkBBk8Kt",
+  "tags": []
+}
